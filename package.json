@@ -1,0 +1,41 @@
+{
+  "name": "vue3-typescript-devtools-starter",
+	"version": "1.0.0",
+	"author": "Damiano Fusco",
+	"license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "npm run build-content-script; vue-cli-service build --mode production",
+    "build-content-script": "tsc -p tsconfig.content.json",
+    "test": "vue-cli-service test:unit",
+    "pretty-vue": "prettier --parser vue --write '**/*.vue'",
+    "pretty-ts": "prettier --parser typescript --write '**/*.ts'",
+    "pretty": "npm run pretty-vue; npm run pretty-ts",
+    "lint": "eslint --fix '**/*.{vue,ts}'"
+  },
+  "dependencies": {
+    "vue": "^3.0.0-beta.1",
+    "vuex": "^4.0.0-alpha.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^5.2.4",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-plugin-typescript": "~4.4.0",
+    "@vue/cli-plugin-unit-mocha": "~4.4.0",
+    "@vue/cli-plugin-vuex": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "@vue/compiler-sfc": "^3.0.0-beta.1",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "@vue/test-utils": "^2.0.0-alpha.1",
+    "chai": "^4.1.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-alpha.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "typescript": "~3.9.3",
+    "vue-cli-plugin-vue-next": "~0.1.3"
+  }
+}

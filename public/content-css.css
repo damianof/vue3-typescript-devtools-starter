@@ -1,0 +1,7 @@
+/* if you need any content css that will be applied to the active tab html */
+.highlight-item {
+	outline-width: 3px;
+	outline-style: dashed;
+	outline-color: red;
+	filter: brightness(1.6);
+}

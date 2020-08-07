@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.json",
+  "files": [
+    "src-content-scripts/content-script.ts"
+  ],
+  "compilerOptions": {
+  	"outDir": "public",
+    "strict": true,
+    "sourceMap": true,
+    "paths": {
+      "@/*": [
+        "src-content-scripts/*"
+      ]
+    }
+  },
+  "include": [
+    "src-content-scripts/*"
+  ],
+  "exclude": [
+    "src/*",
+    "node_modules"
+  ]
+}
